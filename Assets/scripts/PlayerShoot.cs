@@ -64,12 +64,13 @@ public class PlayerShoot : MonoBehaviour
             SelectWeapon(weapon);
         }
 
-        //Debug.Log(weapon);
+        
         CheckProj();
     }
 
     void SelectWeapon(int weapon)
     {
+        Debug.Log("weapon:  "+(weapon+1));
         for (int i = 0; i < weapons.Length; i++)
         {
             weapons[i].SetActive(i==weapon);
@@ -80,12 +81,12 @@ public class PlayerShoot : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, 3f))
+        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, 5f))
         {
             
             if (hit.transform.CompareTag("proj"))
             {
-                Debug.Log("proj detected");
+                //Debug.Log("proj detected");
 
                 enemyProj script = hit.transform.GetComponent<enemyProj>();
 
@@ -93,8 +94,21 @@ public class PlayerShoot : MonoBehaviour
                 {
                     if (Mouse.current.leftButton.isPressed)
                     {
-
-                        Destroy(hit.transform.gameObject);
+                        if (script.type == 1 && weapon == 1)
+                        {
+                            Destroy(hit.transform.gameObject);
+                            Debug.Log("rock");
+                        }
+                        else if (script.type == 2 && weapon == 2)
+                        {
+                            Destroy(hit.transform.gameObject);
+                            Debug.Log("paper");
+                        }
+                        else if (script.type == 3 && weapon == 0)
+                        {
+                            Destroy(hit.transform.gameObject);
+                            Debug.Log("scissors");
+                        }
 
                     }
                 }

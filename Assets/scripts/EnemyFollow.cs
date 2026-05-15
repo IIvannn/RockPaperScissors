@@ -34,13 +34,19 @@ public class EnemyFollow : MonoBehaviour
     public Animator animator;
     bool waiting = false;
 
-    public GameObject bulletPrefab;
+    
 
     public int maxHp = 5;
     int hp;
 
     float nextFireTime;
     public float firerate;
+    public int type = 1;
+    public bool randomtype = false;
+    public GameObject rockProj;
+    public GameObject paperProj;
+    public GameObject scissorsProj;
+
     enum State //states of the enemy
     {
         Idle,
@@ -52,6 +58,25 @@ public class EnemyFollow : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (randomtype)
+        {
+            type = Random.Range(1, 4);
+            Debug.Log(type);
+
+        }
+
+        //if (type == 1)
+        //{
+        //    rock.SetActive(true);
+        //}
+        //else if (type == 2)
+        //{
+        //    paper.SetActive(true);
+        //}
+        //else if (type == 3)
+        //{
+        //    scissors.SetActive(true);
+        //}
 
 
         agent = GetComponent<NavMeshAgent>();
@@ -72,10 +97,7 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentState == State.Attack)
-        {
-            FireNow();
-        }
+        FireNow();
 
         float distance = Vector3.Distance(transform.position, player.position); //check the distance between the enemy and the player
 
@@ -166,9 +188,19 @@ public class EnemyFollow : MonoBehaviour
     {
         if (Time.time >= nextFireTime)
         {
-            GameObject ball = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            if (type == 1)
+            {
+                GameObject ball = Instantiate(rockProj, firePoint.position, firePoint.rotation);
+            }
+            else if (type == 2)
+            {
+                GameObject ball = Instantiate(paperProj, firePoint.position, firePoint.rotation);
+            }
+            else if (type == 3)
+            {
+                GameObject ball = Instantiate(scissorsProj, firePoint.position, firePoint.rotation);
+            }
             
-
             nextFireTime = Time.time + firerate;
         }
 
