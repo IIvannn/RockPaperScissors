@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class fpsController : MonoBehaviour
 {
-
+    public static Transform player;
     public float mouseSense = 100f;
     public Transform playerBody;
 
@@ -20,6 +20,7 @@ public class fpsController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        player = transform;
         Vector2 mouseDelta = Mouse.current.delta.ReadValue();
 
         float mouseX = mouseDelta.x * mouseSense * Time.deltaTime;

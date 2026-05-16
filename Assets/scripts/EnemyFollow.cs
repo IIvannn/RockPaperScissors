@@ -58,6 +58,7 @@ public class EnemyFollow : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        player = fpsController.player;
         if (randomtype)
         {
             type = Random.Range(1, 4);
@@ -97,9 +98,9 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FireNow();
+        //FireNow();
 
-        float distance = Vector3.Distance(transform.position, player.position); //check the distance between the enemy and the player
+        float distance = Vector3.Distance(transform.position, fpsController.player.position); //check the distance between the enemy and the player
 
         if (distance > chaseRange)
         {
@@ -130,7 +131,7 @@ public class EnemyFollow : MonoBehaviour
 
             case State.Chase:
                 //Debug.Log("Enemy chase");
-                agent.SetDestination(player.position); //chase the player
+                agent.SetDestination(fpsController.player.position); //chase the player
                 break;
 
             case State.Attack:
