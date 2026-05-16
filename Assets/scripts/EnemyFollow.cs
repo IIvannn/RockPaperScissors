@@ -91,7 +91,7 @@ public class EnemyFollow : MonoBehaviour
 
         }
 
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         animator.SetBool("patroling", true);
     }
 
