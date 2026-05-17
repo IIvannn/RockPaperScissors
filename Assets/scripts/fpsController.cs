@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class fpsController : MonoBehaviour
 {
+
     public static Transform player;
     public float mouseSense = 100f;
     public Transform playerBody;
@@ -32,4 +33,8 @@ public class fpsController : MonoBehaviour
 
         playerBody.Rotate(Vector3.up * mouseX);
     }
+
+
+
+
 }

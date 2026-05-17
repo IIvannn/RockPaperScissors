@@ -1,11 +1,16 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
 
 public class PlayerMovementScript : MonoBehaviour
 {
+
+    public float hp = 100f;
+    public static float currenthp = 100f;
     public float speed = 6f;
     public static bool bspeed = false;
     public float sprintSpeed = 4f;
@@ -15,6 +20,7 @@ public class PlayerMovementScript : MonoBehaviour
     private Vector3 velocity;
 
     private CharacterController controller;
+    public Slider healthbar;
 
     public static bool onGround;
     public Transform groundCheck;
@@ -32,6 +38,7 @@ public class PlayerMovementScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currenthp = hp;
         controller = GetComponent<CharacterController>();
         airJumpsLeft = airJumps;
     }
@@ -39,7 +46,11 @@ public class PlayerMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (currenthp <= 0f)
+        {
+            Death();
+        }
+        healthbar.value = (currenthp/hp);
 
         onGround = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -104,6 +115,27 @@ public class PlayerMovementScript : MonoBehaviour
             sprintSpeedBonus = 0;
         }
 
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("proj"))
+        {
+            hurt();
+            Destroy(collision.gameObject);
+            Debug.Log("hurt");
+        }
+    }
+
+    void hurt()
+    {
+        currenthp -= 10f;
+
+    }
+    void Death()
+    {
+        SceneManager.LoadScene("DeathMenu");
 
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.Rendering.UI;
 
 public class EnemyFollow : MonoBehaviour
 {
+    public float hp = 1.0f; 
     public Transform firePoint;
     public int attackDamage = 20;
     public float attackCooldown = 0.5f;
@@ -37,7 +38,7 @@ public class EnemyFollow : MonoBehaviour
     
 
     public int maxHp = 5;
-    int hp;
+    
 
     float nextFireTime;
     public float firerate;
@@ -98,8 +99,11 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //FireNow();
-
+        FireNow();
+        if (hp <=0)
+        {
+            Destroy(gameObject);
+        }
         float distance = Vector3.Distance(transform.position, fpsController.player.position); //check the distance between the enemy and the player
 
         if (distance > chaseRange)
@@ -192,14 +196,17 @@ public class EnemyFollow : MonoBehaviour
             if (type == 1)
             {
                 GameObject ball = Instantiate(rockProj, firePoint.position, firePoint.rotation);
+                ball.GetComponent<enemyProj>().source = this.gameObject;
             }
             else if (type == 2)
             {
                 GameObject ball = Instantiate(paperProj, firePoint.position, firePoint.rotation);
+                ball.GetComponent<enemyProj>().source = this.gameObject;
             }
             else if (type == 3)
             {
                 GameObject ball = Instantiate(scissorsProj, firePoint.position, firePoint.rotation);
+                ball.GetComponent<enemyProj>().source = this.gameObject;
             }
             
             nextFireTime = Time.time + firerate;

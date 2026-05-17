@@ -8,6 +8,9 @@ public class enemyProj : MonoBehaviour
     public GameObject paper;
     public GameObject scissors;
     public bool randomtype = false;
+    public float moveSpeed = 10f;
+    public float rotateSpeed = 10f;
+    public GameObject source;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +39,31 @@ public class enemyProj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        moveToPlayer();
+        RotateToPlayer();
+        if (source == null)
+        {
+            destroyProj();
+        }
     }
+
+    void moveToPlayer()
+    {
+        Vector3 dir = (fpsController.player.transform.position - transform.position).normalized;
+        transform.position += dir * moveSpeed * Time.deltaTime;
+    }
+    void RotateToPlayer()
+    {
+        Vector3 dir = fpsController.player.transform.position - transform.position;
+        dir.y = 0f;
+
+        Quaternion targetRot = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, rotateSpeed * Time.deltaTime);
+    }
+
+    void destroyProj()
+    {
+        Destroy(gameObject);
+    }
+
 }

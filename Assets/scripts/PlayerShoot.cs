@@ -4,6 +4,7 @@ using System.Collections;
 using TMPro;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine.UI;
+using Polyperfect.Universal;
 
 public class PlayerShoot : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class PlayerShoot : MonoBehaviour
     Vector3 originalPosition;
 
     [Header("Components")]
-    
+
+    public GameObject croshair;
     public Camera fpsCamera;
 
     //public TextMeshProUGUI magazine;
@@ -31,6 +33,7 @@ public class PlayerShoot : MonoBehaviour
 
 
     public GameObject[] weapons;
+    public GameObject[] uiweapons;
 
     void Start()
     {
@@ -73,7 +76,9 @@ public class PlayerShoot : MonoBehaviour
         Debug.Log("weapon:  "+(weapon+1));
         for (int i = 0; i < weapons.Length; i++)
         {
-            weapons[i].SetActive(i==weapon);
+            weapons[i].SetActive(i == weapon);
+            uiweapons[i].SetActive(i == weapon);
+
         }
     }
 
@@ -86,34 +91,49 @@ public class PlayerShoot : MonoBehaviour
             
             if (hit.transform.CompareTag("proj"))
             {
+                croshair.SetActive(true);
                 //Debug.Log("proj detected");
 
                 enemyProj script = hit.transform.GetComponent<enemyProj>();
 
                 if (script != null)
                 {
+                    
                     if (Mouse.current.leftButton.isPressed)
                     {
                         if (script.type == 1 && weapon == 1)
                         {
+                            script.source.GetComponent<EnemyFollow>().hp = 0;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("rock");
                         }
                         else if (script.type == 2 && weapon == 2)
                         {
+                            script.source.GetComponent<EnemyFollow>().hp = 0;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("paper");
                         }
                         else if (script.type == 3 && weapon == 0)
                         {
+                            script.source.GetComponent<EnemyFollow>().hp = 0;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("scissors");
+                        }
+                        else
+                        {
+                            PlayerMovementScript.currenthp -= 10;
+                            Destroy(hit.transform.gameObject);
+                            Debug.Log("miss");
                         }
 
                     }
                 }
-            }
 
+            }
+            else
+            {
+                croshair.SetActive(false);
+            }
 
         }
     }

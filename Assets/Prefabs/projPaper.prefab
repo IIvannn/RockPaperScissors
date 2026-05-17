@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7376219745561824008}
   - component: {fileID: 2241183425753354863}
   - component: {fileID: 1915361455302935625}
+  - component: {fileID: 5807580414536508515}
   m_Layer: 0
   m_Name: projPaper
   m_TagString: proj
@@ -133,6 +134,36 @@ MonoBehaviour:
   paper: {fileID: 8535000273712487208}
   scissors: {fileID: 8074465807806702868}
   randomtype: 0
+  moveSpeed: 10
+  rotateSpeed: 10
+  source: {fileID: 0}
+--- !u!54 &5807580414536508515
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6177943013639678063}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6764333585018836530
 GameObject:
   m_ObjectHideFlags: 0
