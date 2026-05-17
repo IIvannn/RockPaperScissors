@@ -112,7 +112,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2
@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df29c374a4048a449ca26ea8f9a5821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
+  hp: 1
   firePoint: {fileID: 7000064274450436719}
   attackDamage: 20
   attackCooldown: 0.5

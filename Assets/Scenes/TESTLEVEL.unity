@@ -480,6 +480,7 @@ MonoBehaviour:
   rooms:
   - {fileID: 3204916471748273719, guid: 59c88d35123fd60449049f520378713f, type: 3}
   - {fileID: 3204916471748273719, guid: 41d71bbe5fb9294448729f0b985fcf59, type: 3}
+  - {fileID: 6056816572084559319, guid: a94c3dc6f2bed6a41a54508f4bc545c8, type: 3}
   endRoom: {fileID: 3204916471748273719, guid: 688bc978022bc32489bd60c4a2cfc9c6, type: 3}
   totalRooms: 3
   navSurface: {fileID: 132437937}
@@ -1290,6 +1291,10 @@ PrefabInstance:
     - target: {fileID: 6855352320131474012, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148274674722461647, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+      propertyPath: hp
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 8148274674722461647, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
       propertyPath: healthbar
