@@ -17,11 +17,11 @@ public class Doorscript : MonoBehaviour
     {
         if (enemiesToKill==playerKills)
         {
-            anim.SetTrigger("open");
+            anim.SetBool("Open",true);
         }
         else
         {
-            anim.SetTrigger("close");
+            anim.SetBool("Open", false);
         }
     }
 }
