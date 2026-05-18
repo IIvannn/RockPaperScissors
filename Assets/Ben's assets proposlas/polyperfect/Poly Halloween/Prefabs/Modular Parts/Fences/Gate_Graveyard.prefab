@@ -524,3 +524,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Doorscript
   enemiesToKill: 1
   anim: {fileID: 1375360565918420289}
+  block: {fileID: 2029040180141927849}

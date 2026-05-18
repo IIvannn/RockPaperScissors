@@ -6,6 +6,8 @@ public class Doorscript : MonoBehaviour
     public int enemiesToKill = 1;
     public static int playerKills = 0;
     public Animator anim;
+    public GameObject block;
+    bool opened = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,13 +17,20 @@ public class Doorscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemiesToKill==playerKills)
+        
+        if (enemiesToKill==playerKills && opened == false)
         {
-            anim.SetBool("Open",true);
+            Debug.Log("opened");
+            anim.SetTrigger("Open");
+            block.SetActive(false);
+            opened = true;
         }
-        else
+        else if (enemiesToKill != playerKills && opened == true)
         {
-            anim.SetBool("Open", false);
+            Debug.Log("closed");
+            anim.SetTrigger("Close");
+            block.SetActive(true);
+            opened = false;
         }
     }
 }
