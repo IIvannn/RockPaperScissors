@@ -24,7 +24,7 @@ public class menuManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         Cursor.visible = false;
-        SceneManager.LoadScene("TESTLEVEL");
+        SceneManager.LoadScene("Game");
     }
     public void Quit()
     {
