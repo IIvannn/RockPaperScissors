@@ -485,7 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomSpawner
   rooms:
   - {fileID: 5488665149640355281, guid: 71f8f0bbdf8063c4e8f63829333cd04f, type: 3}
-  - {fileID: 804627056362228861, guid: ac6908cae4ae5d6439fa8df0876d1bfc, type: 3}
+  - {fileID: 5488665149640355281, guid: 71f8f0bbdf8063c4e8f63829333cd04f, type: 3}
   - {fileID: 5488665149640355281, guid: 71f8f0bbdf8063c4e8f63829333cd04f, type: 3}
   endRoom: {fileID: 3204916471748273719, guid: 688bc978022bc32489bd60c4a2cfc9c6, type: 3}
   totalRooms: 3
@@ -930,6 +930,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197043122}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1268119458 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 485621706915748769, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+  m_PrefabInstance: {fileID: 3254826034530419866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1627490800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1388,6 +1393,10 @@ PrefabInstance:
       propertyPath: UIScissors
       value: 
       objectReference: {fileID: 3239452798903884814}
+    - target: {fileID: 4199439215700671530, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+      propertyPath: weaponAnimator
+      value: 
+      objectReference: {fileID: 1268119458}
     - target: {fileID: 4199439215700671530, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
       propertyPath: uiweapons.Array.size
       value: 3
