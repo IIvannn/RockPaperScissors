@@ -32,6 +32,59 @@ Transform:
   - {fileID: 7687749038285139458}
   m_Father: {fileID: 9021604544092895050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &167960342847943153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924247297854769686}
+  - component: {fileID: 7382677268006612634}
+  m_Layer: 0
+  m_Name: Collider (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &924247297854769686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167960342847943153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.018372113, y: 0.9995371, z: -0.011722416, w: 0.021227151}
+  m_LocalPosition: {x: 15.724, y: 0.548, z: 16.125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 1.387, y: 177.592, z: 2.077}
+--- !u!65 &7382677268006612634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167960342847943153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
 --- !u!1 &191305418372428708
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +97,7 @@ GameObject:
   - component: {fileID: 4486619295606728379}
   - component: {fileID: 1848546448927199857}
   - component: {fileID: 1037743892054609546}
+  - component: {fileID: 9001060021451037154}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (38)
   m_TagString: Untagged
@@ -140,11 +194,85 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &9001060021451037154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191305418372428708}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0627356, z: 0.3449818}
+  m_Center: {x: -1.4157438, y: 3.4953012, z: 0.0004457686}
+--- !u!1 &217477670758380080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2172345491198339034}
+  - component: {fileID: 5978697191472451958}
+  m_Layer: 0
+  m_Name: Collider (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2172345491198339034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217477670758380080}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.980652, z: -0, w: -0.19575927}
+  m_LocalPosition: {x: -9.825601, y: 0.49699998, z: -1.3748817}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0, y: 202.578, z: 0}
+--- !u!65 &5978697191472451958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217477670758380080}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &280293890691150549
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +467,7 @@ GameObject:
   - component: {fileID: 4187956142880743265}
   - component: {fileID: 2160158430378240939}
   - component: {fileID: 737456761457358672}
+  - component: {fileID: 5115080411611089371}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (21)
   m_TagString: Untagged
@@ -435,11 +564,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5115080411611089371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502873555255233150}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.417577, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 3.1727219, z: 0.00042097303}
 --- !u!1 &520161974427276314
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +602,7 @@ GameObject:
   - component: {fileID: 4311061631860211973}
   - component: {fileID: 2033094854040942031}
   - component: {fileID: 862040612523370804}
+  - component: {fileID: 5058456219649008693}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (37)
   m_TagString: Untagged
@@ -548,11 +699,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5058456219649008693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520161974427276314}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0716968, z: 0.3449818}
+  m_Center: {x: -1.4157438, y: 3.4997823, z: 0.0004266951}
 --- !u!1 &677235630277879854
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +910,7 @@ GameObject:
   - component: {fileID: 2389820266186585168}
   - component: {fileID: 4201114675497584931}
   - component: {fileID: 444048645347672386}
+  - component: {fileID: 2794230707072010855}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (61)
   m_TagString: Untagged
@@ -834,11 +1007,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &2794230707072010855
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721193498408158359}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.446162, z: 0.3449817}
+  m_Center: {x: -1.4157244, y: 3.1870146, z: 0.00045339763}
 --- !u!1 &767954978102696417
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +1107,22 @@ Transform:
   - {fileID: 4779307934913766640}
   - {fileID: 2637055139539257834}
   - {fileID: 7664427585698022487}
+  - {fileID: 8327514829603347575}
+  - {fileID: 721863231182050924}
+  - {fileID: 601102686948684726}
+  - {fileID: 924247297854769686}
+  - {fileID: 3697721411860043980}
+  - {fileID: 1197019089568404457}
+  - {fileID: 1200561024825354642}
+  - {fileID: 8347337709962224186}
+  - {fileID: 1683676142290887220}
+  - {fileID: 2172345491198339034}
+  - {fileID: 7126051088382448380}
+  - {fileID: 6718073628246316829}
+  - {fileID: 2109205950520320360}
+  - {fileID: 226114993024710464}
+  - {fileID: 7288098597210610266}
+  - {fileID: 169403171907613366}
   - {fileID: 5931602007308581685}
   - {fileID: 1848326001572765739}
   - {fileID: 5862191359024454660}
@@ -1061,6 +1271,7 @@ GameObject:
   - component: {fileID: 3517165648004783272}
   - component: {fileID: 1669582895806212194}
   - component: {fileID: 65893102928950425}
+  - component: {fileID: 7124942928952128308}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (46)
   m_TagString: Untagged
@@ -1157,11 +1368,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &7124942928952128308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876918507176413623}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0842705, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.5060692, z: 0.0004419539}
 --- !u!1 &1075992555930890078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1406,7 @@ GameObject:
   - component: {fileID: 3605899779043162689}
   - component: {fileID: 1580286244310879883}
   - component: {fileID: 157582378967274096}
+  - component: {fileID: 1128008220978362834}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (42)
   m_TagString: Untagged
@@ -1270,11 +1503,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1128008220978362834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075992555930890078}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.040372, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.48412, z: 0.0004343245}
 --- !u!1 &1193370572969498738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,6 +1541,7 @@ GameObject:
   - component: {fileID: 5757966143481853428}
   - component: {fileID: 1773879116148447766}
   - component: {fileID: 7843647989802397104}
+  - component: {fileID: 3463386865254901839}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (56)
   m_TagString: Untagged
@@ -1383,11 +1638,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3463386865254901839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193370572969498738}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.34472, z: 0.3449817}
+  m_Center: {x: -1.4157244, y: 3.1362934, z: 0.00044195354}
 --- !u!1 &1207656018000912914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,6 +1676,7 @@ GameObject:
   - component: {fileID: 3181370400947959565}
   - component: {fileID: 847390105984369607}
   - component: {fileID: 2018489416808636220}
+  - component: {fileID: 2168888486890355969}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (34)
   m_TagString: Untagged
@@ -1496,11 +1773,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &2168888486890355969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207656018000912914}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.388627, z: 0.3449818}
+  m_Center: {x: -1.4157286, y: 3.158247, z: 0.0004305098}
 --- !u!1 &1218225233175855176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,6 +2018,7 @@ GameObject:
   - component: {fileID: 2053848566773308920}
   - component: {fileID: 4873160259403187965}
   - component: {fileID: 5385701875458758624}
+  - component: {fileID: 1813810054584683468}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (46)
   m_TagString: Untagged
@@ -1816,11 +2115,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1813810054584683468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536797394237517142}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 4.646082, z: 0.3449817}
+  m_Center: {x: -1.4157225, y: 2.286975, z: 0.00045339763}
 --- !u!1 &1613541354271694826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +2153,7 @@ GameObject:
   - component: {fileID: 4231349961435051501}
   - component: {fileID: 7112872708513527188}
   - component: {fileID: 1149085882242031115}
+  - component: {fileID: 3803073487663518887}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (44)
   m_TagString: Untagged
@@ -1929,11 +2250,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3803073487663518887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613541354271694826}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.4141445, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1710062, z: 0.00041525098}
 --- !u!1 &1692065056197882268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,6 +2288,7 @@ GameObject:
   - component: {fileID: 7222739724268475592}
   - component: {fileID: 4971919918081115922}
   - component: {fileID: 4489230995949106843}
+  - component: {fileID: 3582265944190701236}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (35)
   m_TagString: Untagged
@@ -2042,11 +2385,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3582265944190701236
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692065056197882268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.3895464, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1587067, z: 0.00041238996}
 --- !u!1 &1749846573691707580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +2423,7 @@ GameObject:
   - component: {fileID: 2642697130240341411}
   - component: {fileID: 236518421141619049}
   - component: {fileID: 1479957914903453074}
+  - component: {fileID: 1050141198623634208}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (35)
   m_TagString: Untagged
@@ -2155,11 +2520,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1050141198623634208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749846573691707580}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.401556, z: 0.3449818}
+  m_Center: {x: -1.4157286, y: 3.1647115, z: 0.00042860245}
 --- !u!1 &1973630868572074767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,6 +2558,7 @@ GameObject:
   - component: {fileID: 3979433199086548746}
   - component: {fileID: 5620220960399584015}
   - component: {fileID: 6258188314261961643}
+  - component: {fileID: 3307495301927379497}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (49)
   m_TagString: Untagged
@@ -2268,11 +2655,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3307495301927379497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973630868572074767}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773295, y: 4.636795, z: 0.3449817}
+  m_Center: {x: -1.4157231, y: 2.2823315, z: 0.00044576824}
 --- !u!1 &2173826303733070053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,6 +2755,7 @@ GameObject:
   - component: {fileID: 8918847497564828842}
   - component: {fileID: 7928119311489882719}
   - component: {fileID: 661383561557626803}
+  - component: {fileID: 3291588835694328164}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (60)
   m_TagString: Untagged
@@ -2443,11 +2852,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3291588835694328164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2209090895697638394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.446722, z: 0.3449817}
+  m_Center: {x: -1.4157244, y: 3.187295, z: 0.00044958293}
 --- !u!1 &2212675934497518796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,6 +3023,59 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8390118871094833361, guid: eab25d0fbde50624694d6a47f3a5dbe7, type: 3}
+--- !u!1 &2243754789377900615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2109205950520320360}
+  - component: {fileID: 727551726835110092}
+  m_Layer: 0
+  m_Name: Collider (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2109205950520320360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243754789377900615}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.025796946, y: 0.73469436, z: -0.008229522, w: 0.67785776}
+  m_LocalPosition: {x: 41.59637, y: 0.22032905, z: 20.158497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 2.698, y: 94.644, z: 1.534}
+--- !u!65 &727551726835110092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243754789377900615}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &2268036530132163010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,6 +3397,59 @@ Transform:
   - {fileID: 6869362927260905223}
   m_Father: {fileID: 5673304189803659032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2490901251315934211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6718073628246316829}
+  - component: {fileID: 5987869598936759024}
+  m_Layer: 0
+  m_Name: Collider (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6718073628246316829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490901251315934211}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.00061492366, y: 0.46222684, z: 0.0011797028, w: -0.8867608}
+  m_LocalPosition: {x: 12.152, y: 0.446, z: 13.967}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0, y: 304.938, z: -0.152}
+--- !u!65 &5987869598936759024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490901251315934211}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &2519532433723185546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2926,6 +3462,7 @@ GameObject:
   - component: {fileID: 2167118037786430613}
   - component: {fileID: 4177037073817729119}
   - component: {fileID: 3329924530010875044}
+  - component: {fileID: 3107108560890938351}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (32)
   m_TagString: Untagged
@@ -3022,11 +3559,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3107108560890938351
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2519532433723185546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.435523, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 3.181696, z: 0.00043241712}
 --- !u!1 &2607621363090556792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,6 +3710,7 @@ GameObject:
   - component: {fileID: 1735235664916785582}
   - component: {fileID: 4607249408124575076}
   - component: {fileID: 2896282183423902111}
+  - component: {fileID: 5043370489895307573}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (51)
   m_TagString: Untagged
@@ -3248,11 +3807,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5043370489895307573
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2661839160793070769}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0710135, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.4994407, z: 0.0004343245}
 --- !u!1 &2793745800956448019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,6 +4480,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3095054055932961001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3321666883142429525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1197019089568404457}
+  - component: {fileID: 9085138115149615343}
+  m_Layer: 0
+  m_Name: Collider (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1197019089568404457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3321666883142429525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.002764541, y: -0.816598, z: 0.0024866234, w: 0.57719475}
+  m_LocalPosition: {x: 41.91343, y: 0.5406491, z: 68.050255}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0.416, y: -109.493, z: -0.094}
+--- !u!65 &9085138115149615343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3321666883142429525}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
+--- !u!1 &3345982086239384511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 169403171907613366}
+  - component: {fileID: 6475273981210908783}
+  m_Layer: 0
+  m_Name: Collider (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &169403171907613366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3345982086239384511}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.006325854, y: -0.8312253, z: 0.026411513, w: -0.555272}
+  m_LocalPosition: {x: 18.552109, y: 0.2365712, z: 43.811836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 2.92, y: -247.515, z: -1.079}
+--- !u!65 &6475273981210908783
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3345982086239384511}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &3387802988525824134
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,6 +4598,7 @@ GameObject:
   - component: {fileID: 1434378784855424409}
   - component: {fileID: 3747866451893619027}
   - component: {fileID: 2576777034522662312}
+  - component: {fileID: 5376335633823020040}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (50)
   m_TagString: Untagged
@@ -4008,11 +4695,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5376335633823020040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387802988525824134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0742564, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.5010617, z: 0.0004305098}
 --- !u!1 &3415643238695365721
 GameObject:
   m_ObjectHideFlags: 0
@@ -4230,6 +4938,7 @@ GameObject:
   - component: {fileID: 340772119620737619}
   - component: {fileID: 4540084787351621313}
   - component: {fileID: 1803617415015261770}
+  - component: {fileID: 227339131422155930}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (34)
   m_TagString: Untagged
@@ -4326,11 +5035,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &227339131422155930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515812590472273103}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.349373, z: 0.3449818}
+  m_Center: {x: -1.4157248, y: 2.1386204, z: 0.00041429733}
 --- !u!1 &3532386965365567462
 GameObject:
   m_ObjectHideFlags: 0
@@ -4343,6 +5073,7 @@ GameObject:
   - component: {fileID: 1055021592249369633}
   - component: {fileID: 8044672779902400057}
   - component: {fileID: 8888219380280199721}
+  - component: {fileID: 6801482169827407392}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (38)
   m_TagString: Untagged
@@ -4439,11 +5170,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &6801482169827407392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532386965365567462}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.429758, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.178813, z: 0.00042383405}
 --- !u!1 &3588109673485910723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4456,6 +5208,7 @@ GameObject:
   - component: {fileID: 950133649238005724}
   - component: {fileID: 3083693390515856150}
   - component: {fileID: 4398591238103138285}
+  - component: {fileID: 270554478802893664}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (5)
   m_TagString: Untagged
@@ -4552,11 +5305,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &270554478802893664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588109673485910723}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 3.935649, z: 0.3449817}
+  m_Center: {x: -1.4157282, y: 1.9317582, z: 0.00045339763}
 --- !u!1 &3608497729017723376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4714,6 +5488,7 @@ GameObject:
   - component: {fileID: 1010780050992997699}
   - component: {fileID: 3018524800632869257}
   - component: {fileID: 4477248671130275186}
+  - component: {fileID: 1624983427604823404}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (15)
   m_TagString: Untagged
@@ -4810,11 +5585,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1624983427604823404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666783455171211356}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 5.5702477, z: 0.3449818}
+  m_Center: {x: -1.4157324, y: 2.7490578, z: 0.00042383408}
 --- !u!1 &3701384488811475647
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,6 +5623,7 @@ GameObject:
   - component: {fileID: 1133216800981444512}
   - component: {fileID: 2908491812531344234}
   - component: {fileID: 4583710341270245265}
+  - component: {fileID: 8255055713322754847}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (43)
   m_TagString: Untagged
@@ -4923,11 +5720,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &8255055713322754847
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701384488811475647}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.048922, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.4883945, z: 0.0004228804}
 --- !u!1 &3742974002041060789
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,6 +5873,59 @@ Transform:
   - {fileID: 2583794547901352242}
   m_Father: {fileID: 2301005615466264742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3904653907584761479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3697721411860043980}
+  - component: {fileID: 6246662560592366807}
+  m_Layer: 0
+  m_Name: Collider (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3697721411860043980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904653907584761479}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.011804183, y: -0.28231248, z: -0.0064506056, w: 0.9592282}
+  m_LocalPosition: {x: 39.613, y: 0.514, z: 16.497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 1.089, y: -32.81, z: -1.091}
+--- !u!65 &6246662560592366807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904653907584761479}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
 --- !u!1 &4133885041092404833
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,6 +6115,7 @@ GameObject:
   - component: {fileID: 8110258185755813076}
   - component: {fileID: 3064839502000871223}
   - component: {fileID: 7577453714325783732}
+  - component: {fileID: 1859464555569973476}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (54)
   m_TagString: Untagged
@@ -5340,11 +6212,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1859464555569973476
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4316304450386964684}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.354917, z: 0.3449817}
+  m_Center: {x: -1.4157225, y: 3.141392, z: 0.00043813884}
 --- !u!1 &4337535479242290884
 GameObject:
   m_ObjectHideFlags: 0
@@ -5442,6 +6335,59 @@ Transform:
   - {fileID: 726466308029812596}
   m_Father: {fileID: 705042298059345588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4558797025551965662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8347337709962224186}
+  - component: {fileID: 5878045953921772391}
+  m_Layer: 0
+  m_Name: Collider (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8347337709962224186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4558797025551965662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.010052113, y: 0.12912004, z: -0.0014883335, w: -0.9915769}
+  m_LocalPosition: {x: 15.532998, y: 0.36298144, z: 40.931625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: -1.12, y: -374.841, z: 0.318}
+--- !u!65 &5878045953921772391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4558797025551965662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
 --- !u!1 &4647946149443035613
 GameObject:
   m_ObjectHideFlags: 0
@@ -5488,6 +6434,7 @@ GameObject:
   - component: {fileID: 6041555856205275717}
   - component: {fileID: 6355717113696383853}
   - component: {fileID: 1899754933414025679}
+  - component: {fileID: 1895936058375807748}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (43)
   m_TagString: Untagged
@@ -5584,11 +6531,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1895936058375807748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4709341168916129602}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.430236, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1790514, z: 0.00041620465}
 --- !u!1 &4710539753680859855
 GameObject:
   m_ObjectHideFlags: 0
@@ -5601,6 +6569,7 @@ GameObject:
   - component: {fileID: 9059898619733190608}
   - component: {fileID: 6512150648105947930}
   - component: {fileID: 5593007993836654561}
+  - component: {fileID: 7367510793970086267}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (36)
   m_TagString: Untagged
@@ -5697,11 +6666,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &7367510793970086267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4710539753680859855}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.425563, z: 0.3449818}
+  m_Center: {x: -1.4157286, y: 3.1767144, z: 0.00044195386}
 --- !u!1 &4726292784379285452
 GameObject:
   m_ObjectHideFlags: 0
@@ -5714,6 +6704,7 @@ GameObject:
   - component: {fileID: 9063534118965477656}
   - component: {fileID: 8901337681704101420}
   - component: {fileID: 8328107485712561161}
+  - component: {fileID: 1870662217162599769}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (45)
   m_TagString: Untagged
@@ -5810,11 +6801,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1870662217162599769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4726292784379285452}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.4199586, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1739132, z: 0.00042860242}
 --- !u!1 &4774157676188906308
 GameObject:
   m_ObjectHideFlags: 0
@@ -5827,6 +6839,7 @@ GameObject:
   - component: {fileID: 9125766351599625819}
   - component: {fileID: 6431645410000769681}
   - component: {fileID: 5656625367662497288}
+  - component: {fileID: 6261124187352764519}
   m_Layer: 0
   m_Name: Wall_Graveyard_2m
   m_TagString: Untagged
@@ -5923,11 +6936,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7737516218245646062, guid: 424ca62b13b54604f91c3130a72a23b2, type: 3}
+--- !u!65 &6261124187352764519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4774157676188906308}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1852086, y: 4.5467978, z: 0.3449817}
+  m_Center: {x: -0.9196676, y: 2.2367926, z: 0.00044576824}
 --- !u!1 &4811596245695347091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5940,6 +6974,7 @@ GameObject:
   - component: {fileID: 9088882468563020940}
   - component: {fileID: 6469074771251927110}
   - component: {fileID: 5622551286567863485}
+  - component: {fileID: 8154746808825756874}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (40)
   m_TagString: Untagged
@@ -6036,11 +7071,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &8154746808825756874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4811596245695347091}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.059545, z: 0.3449818}
+  m_Center: {x: -1.4157438, y: 3.4937065, z: 0.0004305098}
 --- !u!1 &4844802880119594810
 GameObject:
   m_ObjectHideFlags: 0
@@ -6053,6 +7109,7 @@ GameObject:
   - component: {fileID: 9212176488024902181}
   - component: {fileID: 6358184358938869487}
   - component: {fileID: 5763863553368678932}
+  - component: {fileID: 3021551487157050633}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (47)
   m_TagString: Untagged
@@ -6149,11 +7206,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3021551487157050633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844802880119594810}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0885286, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.5081978, z: 0.0004419539}
 --- !u!1 &4897670415417693317
 GameObject:
   m_ObjectHideFlags: 0
@@ -6166,6 +7244,7 @@ GameObject:
   - component: {fileID: 9159211628801425818}
   - component: {fileID: 6411148101616596304}
   - component: {fileID: 5708713415072311723}
+  - component: {fileID: 5535328582484619788}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (6)
   m_TagString: Untagged
@@ -6262,11 +7341,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5535328582484619788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4897670415417693317}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.1173925, y: 3.9277885, z: 0.3449817}
+  m_Center: {x: -2.3857598, y: 1.927828, z: 0.00044576824}
 --- !u!1 &4905505126420105006
 GameObject:
   m_ObjectHideFlags: 0
@@ -6310,6 +7410,7 @@ GameObject:
   - component: {fileID: 8731833613595364032}
   - component: {fileID: 6830064120545033738}
   - component: {fileID: 5262692012789375729}
+  - component: {fileID: 1573535104260413078}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (44)
   m_TagString: Untagged
@@ -6406,11 +7507,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1573535104260413078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5028760814968217567}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0416493, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.4847586, z: 0.0004228804}
 --- !u!1 &5090717723357611550
 GameObject:
   m_ObjectHideFlags: 0
@@ -6455,6 +7577,7 @@ GameObject:
   - component: {fileID: 8805595285544812669}
   - component: {fileID: 6761931691122504887}
   - component: {fileID: 5338631061078452300}
+  - component: {fileID: 3442007105221904453}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (45)
   m_TagString: Untagged
@@ -6551,11 +7674,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3442007105221904453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104770236163265890}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.065918, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.496893, z: 0.0004381392}
 --- !u!1 &5149626256338618654
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,6 +7743,7 @@ GameObject:
   - component: {fileID: 8886307229430755375}
   - component: {fileID: 6680656968558068965}
   - component: {fileID: 5438065488167360542}
+  - component: {fileID: 259783147148745199}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (39)
   m_TagString: Untagged
@@ -6695,11 +7840,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &259783147148745199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5167469828370064688}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.054893, z: 0.3449818}
+  m_Center: {x: -1.4157438, y: 3.4913805, z: 0.0004305098}
 --- !u!1 &5201582458929900973
 GameObject:
   m_ObjectHideFlags: 0
@@ -6864,6 +8030,7 @@ GameObject:
   - component: {fileID: 8645616942717078239}
   - component: {fileID: 5773493245125393941}
   - component: {fileID: 5178581181543899820}
+  - component: {fileID: 1679205439204580303}
   m_Layer: 0
   m_Name: Wall_Graveyard_Pillar
   m_TagString: Untagged
@@ -6960,11 +8127,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3750350036651903997, guid: ccf5ff725becd2c4093234367bb756c1, type: 3}
+--- !u!65 &1679205439204580303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413166173246152640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.34587324, y: 1.4276417, z: 0.34498173}
+  m_Center: {x: 0.0000038072467, y: 0.6777546, z: 0.0004381463}
 --- !u!1 &5422374298036257321
 GameObject:
   m_ObjectHideFlags: 0
@@ -7153,6 +8341,7 @@ GameObject:
   - component: {fileID: 2334603790913581591}
   - component: {fileID: 2990151441839120870}
   - component: {fileID: 4821215939645070234}
+  - component: {fileID: 1488902133262224325}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (53)
   m_TagString: Untagged
@@ -7249,11 +8438,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &1488902133262224325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532315623468450542}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 4.5412316, z: 0.3449817}
+  m_Center: {x: -1.4157225, y: 2.2345498, z: 0.00045339763}
 --- !u!1 &5545366122402147048
 GameObject:
   m_ObjectHideFlags: 0
@@ -7266,6 +8476,7 @@ GameObject:
   - component: {fileID: 8075255545432162295}
   - component: {fileID: 6338224301101828925}
   - component: {fileID: 4626446732103702470}
+  - component: {fileID: 3399781044800855167}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (17)
   m_TagString: Untagged
@@ -7362,11 +8573,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3399781044800855167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5545366122402147048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 5.5314445, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 2.7296557, z: 0.0004266951}
 --- !u!1 &5669043578449036678
 GameObject:
   m_ObjectHideFlags: 0
@@ -7379,6 +8611,7 @@ GameObject:
   - component: {fileID: 8234961801026293913}
   - component: {fileID: 6173451479119406163}
   - component: {fileID: 4786504830902810792}
+  - component: {fileID: 6288844895034522315}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (33)
   m_TagString: Untagged
@@ -7475,11 +8708,85 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &6288844895034522315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5669043578449036678}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.5849924, z: 0.3449818}
+  m_Center: {x: -1.4157133, y: 3.2564287, z: 0.00043241712}
+--- !u!1 &5690069180054372205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1200561024825354642}
+  - component: {fileID: 5808064260890664005}
+  m_Layer: 0
+  m_Name: Collider (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1200561024825354642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690069180054372205}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0037162357, y: -0.98864394, z: -0.0001248184, w: -0.15023115}
+  m_LocalPosition: {x: 21.811, y: 0.553, z: 70.497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: -0.078, y: -197.28, z: -0.419}
+--- !u!65 &5808064260890664005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690069180054372205}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
 --- !u!1 &5703834024915668004
 GameObject:
   m_ObjectHideFlags: 0
@@ -7555,6 +8862,7 @@ GameObject:
   - component: {fileID: 8321588662118546586}
   - component: {fileID: 6095850268038957136}
   - component: {fileID: 4853009185556403371}
+  - component: {fileID: 8198087481348053701}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (49)
   m_TagString: Untagged
@@ -7651,11 +8959,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &8198087481348053701
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735391255781779845}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.082092, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.5049794, z: 0.0004305098}
 --- !u!1 &5884906887343692347
 GameObject:
   m_ObjectHideFlags: 0
@@ -7668,6 +8997,7 @@ GameObject:
   - component: {fileID: 1856129245845640630}
   - component: {fileID: 6515005393764103155}
   - component: {fileID: 3892332825369858310}
+  - component: {fileID: 435797615443735123}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (59)
   m_TagString: Untagged
@@ -7764,11 +9094,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &435797615443735123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884906887343692347}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.4272304, z: 0.3449817}
+  m_Center: {x: -1.4157244, y: 3.1775491, z: 0.00043432415}
 --- !u!1 &5939345792562299394
 GameObject:
   m_ObjectHideFlags: 0
@@ -7846,6 +9197,7 @@ GameObject:
   - component: {fileID: 8064707177539698468}
   - component: {fileID: 5192491194254035950}
   - component: {fileID: 6903730823480579861}
+  - component: {fileID: 2069629503459689426}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (16)
   m_TagString: Untagged
@@ -7942,11 +9294,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &2069629503459689426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985164379500620347}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 5.5618935, z: 0.3449818}
+  m_Center: {x: -1.4157324, y: 2.7448807, z: 0.00042478775}
 --- !u!1 &6053689256056971892
 GameObject:
   m_ObjectHideFlags: 0
@@ -8072,6 +9445,7 @@ GameObject:
   - component: {fileID: 266211980412940942}
   - component: {fileID: 1586765261880663526}
   - component: {fileID: 5610571820726692207}
+  - component: {fileID: 736339785432718502}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (51)
   m_TagString: Untagged
@@ -8168,11 +9542,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &736339785432718502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137104205645381316}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 4.600357, z: 0.3449817}
+  m_Center: {x: -1.4157225, y: 2.2641125, z: 0.00043813884}
 --- !u!1 &6261026998538226899
 GameObject:
   m_ObjectHideFlags: 0
@@ -8640,6 +10035,59 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2608956352583634243, guid: b104dc6782e99914ab621eedffa44649, type: 3}
+--- !u!1 &6525100301476433914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8327514829603347575}
+  - component: {fileID: 7275251498399564298}
+  m_Layer: 0
+  m_Name: Collider (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8327514829603347575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525100301476433914}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9989105, z: -0, w: 0.046668418}
+  m_LocalPosition: {x: -9.732519, y: 0.49699998, z: 40.42791}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0, y: 174.65, z: 0}
+--- !u!65 &7275251498399564298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525100301476433914}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
 --- !u!1 &6530411518012614657
 GameObject:
   m_ObjectHideFlags: 0
@@ -8943,6 +10391,7 @@ GameObject:
   - component: {fileID: 7007537064586978562}
   - component: {fileID: 5105730251490054600}
   - component: {fileID: 5844167347264638259}
+  - component: {fileID: 5851624590536520570}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (53)
   m_TagString: Untagged
@@ -9039,11 +10488,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5851624590536520570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763226782488883229}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.40147, z: 0.3449818}
+  m_Center: {x: -1.4157286, y: 3.1646695, z: 0.0004266951}
 --- !u!1 &6827389521227561516
 GameObject:
   m_ObjectHideFlags: 0
@@ -9056,6 +10526,7 @@ GameObject:
   - component: {fileID: 7087480133791084339}
   - component: {fileID: 5025804877558815737}
   - component: {fileID: 5944376889672140546}
+  - component: {fileID: 142444759959392624}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (41)
   m_TagString: Untagged
@@ -9152,11 +10623,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &142444759959392624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827389521227561516}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0495763, z: 0.3449818}
+  m_Center: {x: -1.4157286, y: 3.488722, z: 0.0004343245}
 --- !u!1 &6832187989873342328
 GameObject:
   m_ObjectHideFlags: 0
@@ -9270,6 +10762,59 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2639333342640246901, guid: c4e6807c9972f6f4c85965be48ed2c90, type: 3}
+--- !u!1 &6873902492418806221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721863231182050924}
+  - component: {fileID: 5231144550239106919}
+  m_Layer: 0
+  m_Name: Collider (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721863231182050924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6873902492418806221}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.730791, z: -0, w: 0.68260133}
+  m_LocalPosition: {x: -12.294673, y: 0.49699998, z: 1.5500412}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0, y: 93.905, z: 0}
+--- !u!65 &5231144550239106919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6873902492418806221}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
 --- !u!1 &6884002430745881692
 GameObject:
   m_ObjectHideFlags: 0
@@ -9404,6 +10949,7 @@ GameObject:
   - component: {fileID: 6697931420393665656}
   - component: {fileID: 8869595830469591218}
   - component: {fileID: 7842657887826451529}
+  - component: {fileID: 4198098336248781880}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (14)
   m_TagString: Untagged
@@ -9500,11 +11046,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &4198098336248781880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6924247155872014695}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 5.5611014, z: 0.3449818}
+  m_Center: {x: -1.4157324, y: 2.7444842, z: 0.00043718552}
 --- !u!1 &7075636625157215339
 GameObject:
   m_ObjectHideFlags: 0
@@ -9517,6 +11084,7 @@ GameObject:
   - component: {fileID: 6833576076854296948}
   - component: {fileID: 8732843021043955134}
   - component: {fileID: 7994135441654704453}
+  - component: {fileID: 8570733043933269353}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (52)
   m_TagString: Untagged
@@ -9613,11 +11181,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &8570733043933269353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075636625157215339}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.067866, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.4978669, z: 0.0004343245}
 --- !u!1 &7204511657989069921
 GameObject:
   m_ObjectHideFlags: 0
@@ -9630,6 +11219,7 @@ GameObject:
   - component: {fileID: 3132587759810839714}
   - component: {fileID: 967060798790391430}
   - component: {fileID: 6845392348993212795}
+  - component: {fileID: 7585622747379924551}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (41)
   m_TagString: Untagged
@@ -9726,11 +11316,85 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &7585622747379924551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204511657989069921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.4254026, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1766348, z: 0.00041906568}
+--- !u!1 &7232792609854132177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1683676142290887220}
+  - component: {fileID: 1034756445094261788}
+  m_Layer: 0
+  m_Name: Collider (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1683676142290887220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232792609854132177}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.62030727, z: -0, w: -0.78435886}
+  m_LocalPosition: {x: -12.222278, y: 0.49699998, z: 37.52054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0, y: 283.323, z: 0}
+--- !u!65 &1034756445094261788
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232792609854132177}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &7248111317567988569
 GameObject:
   m_ObjectHideFlags: 0
@@ -9743,6 +11407,7 @@ GameObject:
   - component: {fileID: 7586567500271057577}
   - component: {fileID: 3268630767308914229}
   - component: {fileID: 4975697871772612704}
+  - component: {fileID: 2983330562400090894}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (50)
   m_TagString: Untagged
@@ -9839,11 +11504,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &2983330562400090894
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7248111317567988569}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 4.6199517, z: 0.3449817}
+  m_Center: {x: -1.415723, y: 2.2739098, z: 0.00044576824}
 --- !u!1 &7287316219567778431
 GameObject:
   m_ObjectHideFlags: 0
@@ -9856,6 +11542,7 @@ GameObject:
   - component: {fileID: 1675758448890948011}
   - component: {fileID: 5457495462067229511}
   - component: {fileID: 4027468619568044664}
+  - component: {fileID: 6536729530471738390}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (58)
   m_TagString: Untagged
@@ -9952,11 +11639,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &6536729530471738390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7287316219567778431}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.394416, z: 0.3449817}
+  m_Center: {x: -1.4157244, y: 3.1611419, z: 0.00043050945}
 --- !u!1 &7292082476492940684
 GameObject:
   m_ObjectHideFlags: 0
@@ -10049,6 +11757,59 @@ Transform:
   - {fileID: 4635538105494865274}
   m_Father: {fileID: 2633536571152583466}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &7352357694572859252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7288098597210610266}
+  - component: {fileID: 5077930617610769130}
+  m_Layer: 0
+  m_Name: Collider (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7288098597210610266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7352357694572859252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.019559871, y: -0.5726945, z: 0.015772238, w: 0.8193837}
+  m_LocalPosition: {x: 18.918749, y: 0.3430369, z: 67.49415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 2.873, y: -69.897, z: 0.198}
+--- !u!65 &5077930617610769130
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7352357694572859252}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &7474720433322881002
 GameObject:
   m_ObjectHideFlags: 0
@@ -10061,6 +11822,7 @@ GameObject:
   - component: {fileID: 1244442380979332925}
   - component: {fileID: 462175785763228613}
   - component: {fileID: 1650306369226707464}
+  - component: {fileID: 5667226850832955796}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (57)
   m_TagString: Untagged
@@ -10157,11 +11919,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5667226850832955796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7474720433322881002}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.3420467, z: 0.3449817}
+  m_Center: {x: -1.4157244, y: 3.1349568, z: 0.00044576824}
 --- !u!1 &7583888398904287263
 GameObject:
   m_ObjectHideFlags: 0
@@ -10174,6 +11957,7 @@ GameObject:
   - component: {fileID: 6186654410875745536}
   - component: {fileID: 8232472510143840714}
   - component: {fileID: 7349324289334074673}
+  - component: {fileID: 6354770138343764905}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (8)
   m_TagString: Untagged
@@ -10270,11 +12054,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &6354770138343764905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7583888398904287263}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.247983, y: 3.8822114, z: 0.3449817}
+  m_Center: {x: -1.9510546, y: 1.9050394, z: 0.00044576824}
 --- !u!1 &7620521133780096426
 GameObject:
   m_ObjectHideFlags: 0
@@ -10287,6 +12092,7 @@ GameObject:
   - component: {fileID: 3031570069947555975}
   - component: {fileID: 4740412297227661420}
   - component: {fileID: 7019021367124782092}
+  - component: {fileID: 4697699339845198036}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (37)
   m_TagString: Untagged
@@ -10383,11 +12189,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &4697699339845198036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7620521133780096426}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.426448, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1771574, z: 0.00042478772}
 --- !u!1 &7637739257811753847
 GameObject:
   m_ObjectHideFlags: 0
@@ -10420,6 +12247,59 @@ Transform:
   - {fileID: 1859873693771047263}
   m_Father: {fileID: 1269084384672022432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7663569153541975860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7126051088382448380}
+  - component: {fileID: 2850075542518456401}
+  m_Layer: 0
+  m_Name: Collider (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7126051088382448380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7663569153541975860}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.77972955, z: -0, w: 0.6261165}
+  m_LocalPosition: {x: 11.81, y: 0.49699998, z: 1.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0, y: 102.472, z: 0}
+--- !u!65 &2850075542518456401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7663569153541975860}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &7693111925377028112
 GameObject:
   m_ObjectHideFlags: 0
@@ -10432,6 +12312,7 @@ GameObject:
   - component: {fileID: 849029440421781886}
   - component: {fileID: 105749321334164202}
   - component: {fileID: 4901023488428694666}
+  - component: {fileID: 7961855063845444902}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (40)
   m_TagString: Untagged
@@ -10528,11 +12409,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &7961855063845444902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7693111925377028112}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.4392576, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1835623, z: 0.00042097303}
 --- !u!1 &7794537824650246500
 GameObject:
   m_ObjectHideFlags: 0
@@ -10613,6 +12515,7 @@ GameObject:
   - component: {fileID: 5846671029354782908}
   - component: {fileID: 8558944973092983926}
   - component: {fileID: 6991537957524998285}
+  - component: {fileID: 8288664150437989286}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (48)
   m_TagString: Untagged
@@ -10709,11 +12612,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &8288664150437989286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7910440164734612899}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 7.0952573, z: 0.3449818}
+  m_Center: {x: -1.4157362, y: 3.511562, z: 0.0004266951}
 --- !u!1 &7910488512300134019
 GameObject:
   m_ObjectHideFlags: 0
@@ -10745,6 +12669,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5779114705157146140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7953838395276752744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 601102686948684726}
+  - component: {fileID: 7077003061153252816}
+  m_Layer: 0
+  m_Name: Collider (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &601102686948684726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7953838395276752744}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.05408773, z: -0, w: 0.9985362}
+  m_LocalPosition: {x: 9.363724, y: 0.49699998, z: -1.6140213}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 0, y: -6.201, z: 0}
+--- !u!65 &7077003061153252816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7953838395276752744}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 2.9909613, z: 1}
+  m_Center: {x: 0.9580612, y: 0.99548066, z: 0}
 --- !u!1 &8131856235913412798
 GameObject:
   m_ObjectHideFlags: 0
@@ -10820,6 +12797,7 @@ GameObject:
   - component: {fileID: 9106158847505963099}
   - component: {fileID: 1682598466118247035}
   - component: {fileID: 7087789548667707994}
+  - component: {fileID: 3129573527110399731}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (39)
   m_TagString: Untagged
@@ -10916,11 +12894,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3129573527110399731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316654018129082222}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.451454, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.189661, z: 0.0004219267}
 --- !u!1 &8325806311429220329
 GameObject:
   m_ObjectHideFlags: 0
@@ -11046,6 +13045,7 @@ GameObject:
   - component: {fileID: 5727735502654106861}
   - component: {fileID: 7537326335656957991}
   - component: {fileID: 9176194191857091804}
+  - component: {fileID: 2299339432585767278}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (7)
   m_TagString: Untagged
@@ -11142,11 +13142,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &2299339432585767278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8329700179014334962}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 3.893908, z: 0.3449817}
+  m_Center: {x: -1.4157282, y: 1.9108877, z: 0.00044576824}
 --- !u!1 &8372318276204360584
 GameObject:
   m_ObjectHideFlags: 0
@@ -11159,6 +13180,7 @@ GameObject:
   - component: {fileID: 151223531863983480}
   - component: {fileID: 4546589080208082684}
   - component: {fileID: 3575938995643813851}
+  - component: {fileID: 5739054254843664824}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (47)
   m_TagString: Untagged
@@ -11255,11 +13277,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5739054254843664824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8372318276204360584}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 4.6376157, z: 0.3449817}
+  m_Center: {x: -1.4157225, y: 2.2827413, z: 0.00044576824}
 --- !u!1 &8473007352918193330
 GameObject:
   m_ObjectHideFlags: 0
@@ -11272,6 +13315,7 @@ GameObject:
   - component: {fileID: 6224954140744255253}
   - component: {fileID: 1389621463888313999}
   - component: {fileID: 1345048691537395655}
+  - component: {fileID: 3356929621044137827}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (52)
   m_TagString: Untagged
@@ -11368,11 +13412,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &3356929621044137827
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8473007352918193330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 4.5656605, z: 0.3449817}
+  m_Center: {x: -1.4157225, y: 2.2467642, z: 0.00043813884}
 --- !u!1 &8506148026898822100
 GameObject:
   m_ObjectHideFlags: 0
@@ -11385,6 +13450,7 @@ GameObject:
   - component: {fileID: 7196107282732619214}
   - component: {fileID: 6971909313521658034}
   - component: {fileID: 8703880501728727169}
+  - component: {fileID: 4085731941668605557}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (36)
   m_TagString: Untagged
@@ -11481,11 +13547,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &4085731941668605557
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8506148026898822100}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.398299, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.1630836, z: 0.00041143628}
 --- !u!1 &8526633002794367530
 GameObject:
   m_ObjectHideFlags: 0
@@ -11531,6 +13618,7 @@ GameObject:
   - component: {fileID: 5427656873472545717}
   - component: {fileID: 7833482010396534655}
   - component: {fileID: 8896733260050840452}
+  - component: {fileID: 5712624561285183926}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (31)
   m_TagString: Untagged
@@ -11627,11 +13715,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &5712624561285183926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626330706411685546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 6.416263, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 3.172065, z: 0.00041906568}
 --- !u!1 &8665644003923955709
 GameObject:
   m_ObjectHideFlags: 0
@@ -11739,6 +13848,7 @@ GameObject:
   - component: {fileID: 6030982087200922508}
   - component: {fileID: 5944606538301924971}
   - component: {fileID: 6148054398078054779}
+  - component: {fileID: 754770132858830150}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (55)
   m_TagString: Untagged
@@ -11835,11 +13945,32 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &754770132858830150
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737286475174150833}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 6.3335404, z: 0.3449817}
+  m_Center: {x: -1.4157244, y: 3.1307037, z: 0.00044195354}
 --- !u!1 &8804026618468174506
 GameObject:
   m_ObjectHideFlags: 0
@@ -12088,6 +14219,7 @@ GameObject:
   - component: {fileID: 1855593242113356252}
   - component: {fileID: 6502380361127897583}
   - component: {fileID: 6483622173865338929}
+  - component: {fileID: 6221114060160806791}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (42)
   m_TagString: Untagged
@@ -12184,11 +14316,85 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &6221114060160806791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067147629185285344}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773303, y: 4.43792, z: 0.3449818}
+  m_Center: {x: -1.4157209, y: 2.182894, z: 0.000418112}
+--- !u!1 &9072391443863656189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226114993024710464}
+  - component: {fileID: 2042812359591285964}
+  m_Layer: 0
+  m_Name: Collider (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &226114993024710464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9072391443863656189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.020489182, y: 0.15545917, z: 0.00024320438, w: 0.98762983}
+  m_LocalPosition: {x: 38.80242, y: 0.33409607, z: 70.82608}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2633536571152583466}
+  m_LocalEulerAnglesHint: {x: 2.315, y: 17.899, z: 0.393}
+--- !u!65 &2042812359591285964
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9072391443863656189}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
+  m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
 --- !u!1 &9082077227723713487
 GameObject:
   m_ObjectHideFlags: 0
@@ -12348,6 +14554,7 @@ GameObject:
   - component: {fileID: 4561552919189037760}
   - component: {fileID: 8483853326329963417}
   - component: {fileID: 8274748271152471438}
+  - component: {fileID: 6403773615856035280}
   m_Layer: 0
   m_Name: Wall_Graveyard_3m (48)
   m_TagString: Untagged
@@ -12444,8 +14651,29 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6948055394384261287, guid: 69f32e3beb2b24342a8ace60eb90e7fc, type: 3}
+--- !u!65 &6403773615856035280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9180042612786706408}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1773298, y: 4.6354556, z: 0.3449817}
+  m_Center: {x: -1.415723, y: 2.2816613, z: 0.00044576824}
