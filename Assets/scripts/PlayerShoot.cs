@@ -51,18 +51,18 @@ public class PlayerShoot : MonoBehaviour
         if (scroll.y >0)
         {
             weapon--;
-            if (weapon >= weapons.Length)
+            if (weapon <0)
             {
-                weapon = 0;
+                weapon = weapons.Length - 1;
             }
             SelectWeapon(weapon);
         }
         if (scroll.y < 0)
         {
             weapon++;
-            if (weapon<0)
+            if (weapon >= weapons.Length)
             {
-                weapon = weapons.Length-1;
+                weapon = 0;
             }
             SelectWeapon(weapon);
         }
