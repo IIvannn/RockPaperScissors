@@ -20,7 +20,7 @@ public class PlayerShoot : MonoBehaviour
     Vector3 originalPosition;
 
     [Header("Components")]
-
+    public Animator weaponAnimator;
     public GameObject croshair;
     public Camera fpsCamera;
 
@@ -67,7 +67,35 @@ public class PlayerShoot : MonoBehaviour
             SelectWeapon(weapon);
         }
 
-        
+        if (Mouse.current.leftButton.isPressed)
+        {
+            weaponAnimator.SetBool("attacking", true);
+        }
+        else
+        {
+            weaponAnimator.SetBool("attacking", false);
+        }
+
+        if (weapon == 0)
+        {
+            weaponAnimator.SetBool("rock", true);
+            weaponAnimator.SetBool("paper", false);
+            weaponAnimator.SetBool("scissors", false);
+        }
+        if (weapon == 1)
+        {
+            weaponAnimator.SetBool("rock", false);
+            weaponAnimator.SetBool("paper", true);
+            weaponAnimator.SetBool("scissors", false);
+        }
+        if (weapon == 2)
+        {
+            weaponAnimator.SetBool("rock", false);
+            weaponAnimator.SetBool("paper", false);
+            weaponAnimator.SetBool("scissors", true);
+        }
+
+
         CheckProj();
     }
 
@@ -101,21 +129,22 @@ public class PlayerShoot : MonoBehaviour
                     
                     if (Mouse.current.leftButton.isPressed)
                     {
+                        
                         if (script.type == 1 && weapon == 1)
                         {
-                            script.source.GetComponent<EnemyFollow>().hp = 0;
+                            script.source.GetComponent<EnemyFollow>().hp -= 10;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("rock");
                         }
                         else if (script.type == 2 && weapon == 2)
                         {
-                            script.source.GetComponent<EnemyFollow>().hp = 0;
+                            script.source.GetComponent<EnemyFollow>().hp -= 10;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("paper");
                         }
                         else if (script.type == 3 && weapon == 0)
                         {
-                            script.source.GetComponent<EnemyFollow>().hp = 0;
+                            script.source.GetComponent<EnemyFollow>().hp -= 10;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("scissors");
                         }

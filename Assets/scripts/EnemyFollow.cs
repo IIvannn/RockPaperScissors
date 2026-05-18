@@ -6,6 +6,7 @@ using UnityEngine.Rendering.UI;
 
 public class EnemyFollow : MonoBehaviour
 {
+    
     public float hp = 1.0f; 
     public Transform firePoint;
     public int attackDamage = 20;
@@ -99,9 +100,11 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FireNow();
+        
+        
         if (hp <=0)
         {
+            Doorscript.playerKills++;
             Destroy(gameObject);
         }
         float distance = Vector3.Distance(transform.position, fpsController.player.position); //check the distance between the enemy and the player
@@ -112,6 +115,7 @@ public class EnemyFollow : MonoBehaviour
         }
         else if (distance > attackRange)
         {
+            FireNow();
             currentState = State.Chase;
         }
         else

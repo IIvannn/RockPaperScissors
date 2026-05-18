@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathMenu.unity
     guid: 85318b95ea26c384fb5969866ee66bf9
+  - enabled: 1
+    path: Assets/Scenes/WinMenu.unity
+    guid: 6276328c92a2df549b78e1cd2b2f1bf3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
