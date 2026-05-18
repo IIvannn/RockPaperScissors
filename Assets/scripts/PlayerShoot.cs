@@ -50,7 +50,7 @@ public class PlayerShoot : MonoBehaviour
         
         if (scroll.y >0)
         {
-            weapon++;
+            weapon--;
             if (weapon >= weapons.Length)
             {
                 weapon = 0;
@@ -59,7 +59,7 @@ public class PlayerShoot : MonoBehaviour
         }
         if (scroll.y < 0)
         {
-            weapon--;
+            weapon++;
             if (weapon<0)
             {
                 weapon = weapons.Length-1;
