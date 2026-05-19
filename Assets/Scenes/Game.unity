@@ -1047,6 +1047,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.1773298, y: 2.9107156, z: 0.3449817}
   m_Center: {x: -1.4157282, y: 1.4192913, z: 0.00044576824}
+--- !u!82 &547576055 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2033642327766567912, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+  m_PrefabInstance: {fileID: 3254826034530419866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &551297521 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 666846217725449396, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
@@ -1111,6 +1116,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.9161224, y: 3.0813122, z: 1}
   m_Center: {x: 0.9580611, y: 1.0406561, z: 0.000000039882583}
+--- !u!82 &596763489 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4805242136554763590, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+  m_PrefabInstance: {fileID: 3254826034530419866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &627443344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,6 +2375,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.1773298, y: 2.8660555, z: 0.3449817}
   m_Center: {x: -1.4157282, y: 1.3969612, z: 0.00044576824}
+--- !u!82 &1779754325 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3385559670190691682, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+  m_PrefabInstance: {fileID: 3254826034530419866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1788765478 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5094331121242314310, guid: a94c3dc6f2bed6a41a54508f4bc545c8, type: 3}
@@ -3084,6 +3099,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3055907877082961176, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+      propertyPath: rocksnd
+      value: 
+      objectReference: {fileID: 596763489}
+    - target: {fileID: 3055907877082961176, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+      propertyPath: papersnd
+      value: 
+      objectReference: {fileID: 1779754325}
+    - target: {fileID: 3055907877082961176, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
+      propertyPath: scissorssnd
+      value: 
+      objectReference: {fileID: 547576055}
     - target: {fileID: 4199439215700671530, guid: 68366881b7d857b4f9f1d359ae0492c5, type: 3}
       propertyPath: UIRock
       value: 
