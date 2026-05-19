@@ -876,9 +876,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomSpawner
   rooms:
+  - {fileID: 804627056362228861, guid: a7b3604c2b876e54aa2f57cd9c1a2f54, type: 3}
+  - {fileID: 804627056362228861, guid: ac6908cae4ae5d6439fa8df0876d1bfc, type: 3}
   - {fileID: 5488665149640355281, guid: 71f8f0bbdf8063c4e8f63829333cd04f, type: 3}
-  - {fileID: 5488665149640355281, guid: 71f8f0bbdf8063c4e8f63829333cd04f, type: 3}
-  - {fileID: 5488665149640355281, guid: 71f8f0bbdf8063c4e8f63829333cd04f, type: 3}
+  - {fileID: 5501962725956550939, guid: f22726b57c9995c42ba89e8dbff1e9ba, type: 3}
   endRoom: {fileID: 3204916471748273719, guid: 688bc978022bc32489bd60c4a2cfc9c6, type: 3}
   totalRooms: 3
   navSurface: {fileID: 132437937}
@@ -1671,7 +1672,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197043122}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2157,6 +2158,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8543875571325474415, guid: a94c3dc6f2bed6a41a54508f4bc545c8, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8946556063128505328, guid: a94c3dc6f2bed6a41a54508f4bc545c8, type: 3}
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
