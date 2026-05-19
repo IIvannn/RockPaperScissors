@@ -148,9 +148,9 @@ MonoBehaviour:
   firerate: 1
   type: 1
   randomtype: 0
-  rockProj: {fileID: 6177943013639678063, guid: 4e751d72ebbc54f4c84ee85cd6ead943, type: 3}
-  paperProj: {fileID: 6177943013639678063, guid: b0de7cf60c6c8454c8c13ca388c7aa8c, type: 3}
-  scissorsProj: {fileID: 6177943013639678063, guid: 56cdeb3f3769ea84db0f82dd02193968, type: 3}
+  rockProj: {fileID: 6177943013639678063, guid: ac5635133a8189f4ea0eb6e21c5776d3, type: 3}
+  paperProj: {fileID: 6177943013639678063, guid: 5e1e7dcecf7161f41b9b33db21329eda, type: 3}
+  scissorsProj: {fileID: 6177943013639678063, guid: e7542af60d2c14646a9334084dcb3fca, type: 3}
 --- !u!195 &657381567951686615
 NavMeshAgent:
   m_ObjectHideFlags: 0
