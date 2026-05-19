@@ -2972,7 +2972,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2329376454748468684, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2635669018765269097, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
       propertyPath: m_Pivot.x
@@ -3060,6 +3060,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2678546533816522948, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650926074754839147, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fbe28f93bbb90041bcbbfd5a7d73fdd, type: 2}
+    - target: {fileID: 3650926074754839147, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 494129398362163819, guid: 4fbe28f93bbb90041bcbbfd5a7d73fdd, type: 2}
+    - target: {fileID: 3650926074754839147, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799529860072233084, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fbe28f93bbb90041bcbbfd5a7d73fdd, type: 2}
+    - target: {fileID: 3799529860072233084, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 494129398362163819, guid: 4fbe28f93bbb90041bcbbfd5a7d73fdd, type: 2}
+    - target: {fileID: 3799529860072233084, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4837770531420010103, guid: 008ac9cb8813d664f9db2915e1c2f1e7, type: 3}
