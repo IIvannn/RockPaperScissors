@@ -23,11 +23,13 @@ public class PlayerShoot : MonoBehaviour
     public Animator weaponAnimator;
     public GameObject croshair;
     public Camera fpsCamera;
+    public AudioSource hurtsnd;
+    public AudioSource ghosthurtsnd;
 
     //public TextMeshProUGUI magazine;
     public GameObject cameraShaker;
 
-    private int weapon = 1;
+    public static int weapon = 1;
 
     private Vector2 scroll;
 
@@ -135,24 +137,31 @@ public class PlayerShoot : MonoBehaviour
                             script.source.GetComponent<EnemyFollow>().hp -= 10;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("rock");
+
+                            ghosthurtsnd.Play();
                         }
                         else if (script.type == 2 && weapon == 2)
                         {
                             script.source.GetComponent<EnemyFollow>().hp -= 10;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("paper");
+
+                            ghosthurtsnd.Play();
                         }
                         else if (script.type == 3 && weapon == 0)
                         {
                             script.source.GetComponent<EnemyFollow>().hp -= 10;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("scissors");
+
+                            ghosthurtsnd.Play();
                         }
                         else
                         {
                             PlayerMovementScript.currenthp -= 10;
                             Destroy(hit.transform.gameObject);
                             Debug.Log("miss");
+                            hurtsnd.Play();
                         }
 
                     }
@@ -188,5 +197,5 @@ public class PlayerShoot : MonoBehaviour
     }
 
 
-    
+
 }
